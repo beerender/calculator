@@ -32,8 +32,15 @@ public class HelloWorld{
     }
     public static int divide(int no1,int no2)
     {
-        return no1/no2;
-    }
+        try{        //exception handling
+        int ans=no1/no2;
+        return ans;
+        }
+         catch(Exception e){
+         System.out.println(e);
+         }
+         return -1;
+      }
     public static int multiply(int no1,int no2)
     {
         return no1*no2;
