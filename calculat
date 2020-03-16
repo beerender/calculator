@@ -3,7 +3,7 @@ public class HelloWorld{
 
      public static void main(String []args){
         Scanner sc=new Scanner(System.in);
-        char ch='';
+        char ch1;
         
         do{              //2. add do-while loop
         int no1=sc.nextInt();
@@ -22,16 +22,16 @@ public class HelloWorld{
                          System.out.println(ans);
                         break;
             case '/': ans=divide(no1,no2);
-                         if(ans){     //2. conditon for ans
+                         if(ans!=0){     //2. conditon for ans
                          System.out.println(ans);}
                         break;
             default: System.out.println("Enter valid sign");
                         break;
      }
      System.out.println("Enter more? ");
-     ch=sc.next().charAt(0);
+     ch1=sc.next().charAt(0);
      
-     }while(ch=='y')
+     }while(ch1=='y');
      
     }
     public static long addition(int no1,int no2) //2. changed to long return type
